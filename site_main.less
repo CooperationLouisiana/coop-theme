@@ -2,9 +2,7 @@
 @import 'site_variables.less';
 // base theme
 @import 'site_bootswatch.less';
-// partials
-@import 'site_header';
-@import 'site_footer';
+
 
 main {
 	height: 95vh;
@@ -21,4 +19,19 @@ main {
     background-repeat: no-repeat; */
     background-color: goldenrod;
     height: 400px;
+}
+
+// footer
+footer {
+	display: flex;
+	justify-content: space-around;
+	.nav {
+	display: flex;
+	}
+}
+
+@media (max-width: 1000px) {
+	main {
+		height: initial;
+	}
 }
